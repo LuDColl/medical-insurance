@@ -1,3 +1,7 @@
+# Medical Insurance
+* down: `docker-compose down`
+* production: `docker-compose --profile production up`;
+* development: `docker-compose --profile development up`
 # Docker
 ## Compose
 [Introduction](https://docs.docker.com/compose/intro/compose-application-model)
