@@ -3,7 +3,7 @@ services:
     image: postgres
     restart: always
     shm_size: 128mb
-    env_file: ./.env
+    env_file: ./.env.test
     ports:
       - 5432:5432
     volumes:
@@ -12,13 +12,17 @@ services:
   backend:
     build:
       context: ./backend
-      dockerfile: ./Dockerfile
+      dockerfile: ./Dockerfile.debug
     environment:
-      NODE_ENV: production
+      NODE_ENV: debug
     ports:
       - 3000:3000
+      - 9229:9229
     depends_on:
       - db
+    volumes:
+      - ./backend:/usr/src/app
+      - /usr/src/app/node_modules
 
 volumes:
   db-data:
