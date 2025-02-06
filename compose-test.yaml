@@ -1,0 +1,22 @@
+services:
+  db:
+    image: postgres
+    restart: always
+    shm_size: 128mb
+    env_file: .env.test
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.test
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+
+volumes:
+  db-data:
