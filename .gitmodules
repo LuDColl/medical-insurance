@@ -1,6 +1,6 @@
 [submodule "backend"]
 	path = backend
-	url = https://github.com/LuDColl/medical-insurance-backend
+	url = https://github.com/LuDColl/medical-insurance-backend.git
 [submodule "frontend"]
 	path = frontend
 	url = https://github.com/LuDColl/medical-insurance-frontend.git
