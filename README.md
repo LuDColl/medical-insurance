@@ -12,18 +12,18 @@ git submodule foreach 'git checkout main'
 
 - `.env` and `.env.dev`:
 
-```js
-POSTGRES_DB = example;
-POSTGRES_USER = example;
-POSTGRES_PASSWORD = example;
+```
+POSTGRES_DB=example
+POSTGRES_USER=example
+POSTGRES_PASSWORD=example
 ```
 
 - `backend/.env`:
 
-```js
-PORT = 3000;
-DB_PORT = 5432;
-JWT_SECRET = example;
+```
+PORT=3000
+DB_PORT=5432
+JWT_SECRET=example
 ```
 
 ## Production
