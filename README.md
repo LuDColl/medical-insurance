@@ -5,7 +5,7 @@
 ```bash
 git clone --recurse-submodules https://github.com/LuDColl/medical-insurance.git
 cd medical-insurance
-git submodule foreach 'git checkout main'
+git submodule foreach 'git checkout main && npm install'
 ```
 
 ## Environments
