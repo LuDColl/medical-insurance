@@ -1,4 +1,8 @@
 # Medical Insurance
+## Git Clone
+```bash
+git clone --recurse-submodules https://github.com/LuDColl/medical-insurance.git
+```
 ## Environments
 * `.env` and `.env.dev`:
 ```js
