@@ -2,7 +2,13 @@
 ## Git Clone
 ```bash
 git clone --recurse-submodules https://github.com/LuDColl/medical-insurance.git
+cd medical-insurance/backend
+git checkout main
+cd ../frontend
+git checkout main
+cd ..
 ```
+
 ## Environments
 * `.env` and `.env.dev`:
 ```js
