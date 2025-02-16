@@ -13,7 +13,7 @@ git submodule foreach 'git checkout main && npm install'
 - `.env` and `.env.dev`:
 
 ```
-POSTGRES_DB=example
+POSTGRES_DB=medical-insurance
 POSTGRES_USER=example
 POSTGRES_PASSWORD=example
 ```
