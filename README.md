@@ -36,6 +36,11 @@ JWT_SECRET=example
 - up: `docker-compose --env-file .env.dev --profile development up`
 - down: `docker-compose --profile development down`
 
+### Backend
+
+- up: `docker-compose --env-file .env.dev --profile back-development up`
+- down: `docker-compose --profile back-development down`
+
 # Docker
 
 ## Compose

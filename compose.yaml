@@ -22,6 +22,7 @@ services:
       - db-data-dev:/var/lib/postgresql/data
     profiles:
       - development
+      - back-development
 
   backend:
     build: backend
@@ -56,6 +57,7 @@ services:
       - /usr/src/app/node_modules
     profiles:
       - development
+      - back-development
 
   frontend:
     build: frontend
